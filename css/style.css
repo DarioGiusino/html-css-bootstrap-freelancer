@@ -16,8 +16,14 @@ header{
     min-height: 50px;
 }
 
-section{
+section:nth-child(even){
     background-color: #1abc9c;
     border: 2px solid purple;
+    min-height: 500px;
+}
+
+section:nth-child(odd){
+    background-color: #fff;
+    border: 2px solid magenta;
     min-height: 500px;
 }
