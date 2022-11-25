@@ -2,39 +2,74 @@
 Mobile first (bootstrap) su tre breakpoint: xs (fino a 767px); md (da 768px a 1199px); xl (da 1200px in poi)
 */
 
+/* GENERICS */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 header{
     height: 90px;
     background-color: #2c3e50;
 }
 
 footer{
-    /* min-height: 400px; */
     background-color: #3a546d;
+}
+
+span{
+    display: inline-block;
+}
+
+/* SECTIONs BG COLOR */
+section:nth-child(even){
+    background-color: #1abc9c;
+}
+
+section:nth-child(odd){
+    background-color: #fff;
+}
+
+/* FOOTER */
+footer span{
+    width: 40px;
+    height: 40px;
+}
+
+footer a{
+    color: #1abc9c;
 }
 
 .copyright{
     background-color: #2c3e50;
     color: #fff;
-    text-align: center;
 }
 
-.row{
-    border: 1px dashed red;
-}
-
-[class^='col']{
-    border: 1px solid yellow;
-    min-height: 50px;
-}
-
-section:nth-child(even){
-    background-color: #1abc9c;
-    border: 2px solid purple;
-    min-height: 500px;
-}
-
-section:nth-child(odd){
+/* SEPARATORI */
+span.primary{
+    height: 2px;
+    width: 60px;
     background-color: #fff;
-    border: 2px solid magenta;
-    min-height: 500px;
+    vertical-align: super;
+    border-radius: 2px;
+}
+
+span.secondary{
+    height: 2px;
+    width: 60px;
+    background-color: #000;
+    vertical-align: super;
+    border-radius: 2px;
+}
+
+/* CONTACT ME SECTION */
+#contact button{
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 992px){
+    #jumbotron img{
+        width: 25%!important;
+    }
 }
