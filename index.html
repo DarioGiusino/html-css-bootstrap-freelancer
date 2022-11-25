@@ -18,26 +18,28 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="container-md h-100">
-            <div class="row h-100 align-items-center text-white">
-                <!-- Header Title -->
-                <div class="col-6">
-                    <h4 class="text-uppercase fw-bold mb-0">start bootstrap</h4>
-                </div>
-                <!-- Header Menu -->
-                <div class="col-6 text-end">
-                    <i class="bi bi-list h4 fs-2 rounded border border-white px-2 py-1 d-md-none"></i>
-                    <ul class="list-inline mb-0 d-none d-md-block">
-                        <li class="list-inline-item text-uppercase fw-bold"><a class="text-white text-decoration-none" href="#portfolio">portfolio</a></li>
-                        <li class="list-inline-item text-uppercase fw-bold"><a class="text-white text-decoration-none" href="#about">about</a></li>
-                        <li class="list-inline-item text-uppercase fw-bold"><a class="text-white text-decoration-none" href="#contact">contact</a></li>
-                    </ul>
-                </div>
+    <!-- HEADER/NAV -->
+    <nav class="navbar navbar-expand-md navbar-dark header-bg">
+        <div class="container-md text-uppercase fw-semibold">
+            <a class="navbar-brand fs-4" href="#">start bootstrap</a>
+            <button class="navbar-toggler border-white d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
 
     <!-- JUMBOTRON -->
     <section id="jumbotron" class="py-4">
