@@ -22,7 +22,7 @@
     <nav class="navbar navbar-expand-md navbar-dark header-bg">
         <div class="container-md text-uppercase fw-semibold">
             <a class="navbar-brand fs-4" href="#">start bootstrap</a>
-            <button class="navbar-toggler border-white d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-white d-md-none shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
@@ -139,16 +139,22 @@
 
                 <!-- Form -->
                 <div class="row mx-md-5">
-                    <div class="col-8 col-md-12 offset-2 offset-md-0 text-capitalize fs-5 pb-1 px-0 mb-2 border-bottom border-dark">name</div>
-                    <div class="col-8 col-md-12 offset-2 offset-md-0 text-capitalize fs-5 pb-1 px-0 mb-2 border-bottom border-dark">email address</div>
-                    <div class="col-8 col-md-12 offset-2 offset-md-0 text-capitalize fs-5 pb-1 px-0 mb-2 border-bottom border-dark">phone number</div>
-                    <div class="col-8 col-md-12 offset-2 offset-md-0 text-capitalize fs-5 pb-5 px-0 mb-2 border-bottom border-dark">message</div>
-                </div>
-
-                <!-- Contact send button -->
-                <div class="row mx-md-5">
-                    <div class="col-3 offset-2 offset-md-0 px-0">
-                        <button type="button" class="btn btn-success text-capitalize">send</button>
+                    <div class="col-8 col-md-12 offset-2 offset-md-0">
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control border-0 border-bottom rounded-0 px-0 shadow-none" id="name" aria-describedby="emailHelp" placeholder="Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control border-0 border-bottom rounded-0 px-0 shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control border-0 border-bottom rounded-0 px-0 shadow-none" id="phone" aria-describedby="emailHelp" placeholder="Phone Number">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control border-0 border-bottom rounded-0 px-0 shadow-none" id="phone" aria-describedby="emailHelp" placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary text-capitalize">send</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -161,13 +167,13 @@
         <div class="container-md py-4">
             <div class="row">
                 <!-- Location -->
-                <div class="col-12 col-md-4 mb-2">
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
                     <p class="text-uppercase mb-1 fw-semibold">location</p>
                     <address class="text-capitalize mb-0">2215 john daniel drive clark, mO 54243</address>
                 </div>
                 
                 <!-- Around the web (social links) -->
-                <div class="col-12 col-md-4 mb-2">
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
                     <p class="text-uppercase mb-1 fw-semibold">around the web</p>
                     <span class="rounded-circle border p-2 mx-1"><i class="fa-brands fa-facebook-f"></i></span>
                     <span class="rounded-circle border p-2 mx-1"><i class="fa-brands fa-google-plus-g"></i></span>
@@ -176,7 +182,7 @@
                 </div>
 
                 <!-- About freelancer -->
-                <div class="col-12 col-md-4 mb-2">
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
                     <p class="text-uppercase mb-1 fw-semibold">about freelancer</p>
                     <p>Freelancer is a free to use, open source Bootstrap theme created by <a class="text-capitalize text-decoration-none" href="#">start bootstrap</a>.</p>
                 </div>
